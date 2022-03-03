@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "808e32a6-b7a7-4cda-9921-9525694c1fc4",
+		"name": "CustomerService-Prueba",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllCustomers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8079/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8079",
+					"path": [
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createCustomer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Manuel Enrique\",\r\n    \"lastName\":\"Espinoza Tremel\",\r\n    \"nroDocument\":\"58669987\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8079/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8079",
+					"path": [
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "finByNumDoc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8079/customer/58669987",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8079",
+					"path": [
+						"customer",
+						"58669987"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteCustomer",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8079/customer/620327d087048c2681d72c0a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8079",
+					"path": [
+						"customer",
+						"620327d087048c2681d72c0a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateCustomer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\":\"620c30c5bdb0c2387bdd0733\",\r\n    \"name\":\"Hernan Villavicencia\",\r\n    \"lastName\":\"Espinoza Tremel\",\r\n    \"nroDocument\":\"58669987\",\r\n    \"type\":\"P\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8079/customer/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8079",
+					"path": [
+						"customer",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
